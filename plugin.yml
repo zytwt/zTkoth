@@ -1,0 +1,17 @@
+name: KothPlugin
+version: '${version}'
+main: com.ejemplo.koth.KothPlugin
+api-version: '1.20'
+description: Plugin KOTH (King of the Hill)
+softdepend: [Vault, PlaceholderAPI]
+commands:
+  koth:
+    description: Comando principal de KOTH
+    usage: /koth <gui|recompensas|pos1|pos2|create|delete|start|stop|list|next|reload>
+permissions:
+  koth.use:
+    description: Ver menu de recompensas
+    default: true
+  koth.admin:
+    description: Administrar KOTH
+    default: op

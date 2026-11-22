@@ -1,0 +1,41 @@
+mensajes:
+  prefijo: "&6[KOTH] &r"
+  inicio: "&aEl KOTH &e%koth% &aha comenzado! Captura la zona %tiempo%s."
+  ganador: "&e%player% &acapturo el KOTH &e%koth%&a!"
+  detenido: "&cEl KOTH %koth% fue detenido."
+  disputa: "&cZona en disputa"
+
+recompensas:
+  dinero: 1000          # Requiere Vault + plugin de economia. 0 para desactivar
+  comandos:             # %player% = ganador
+    - "give %player% diamond 5"
+
+scoreboard:
+  activado: true
+  titulo: "&6&lKOTH"
+
+# Horarios automaticos (hora del servidor).
+# Formato: "HH:mm nombre"  o  "DIA HH:mm nombre"  (MON TUE WED THU FRI SAT SUN)
+horarios:
+  - "18:00 spawn"
+  - "SAT 21:30 spawn"
+
+# Textos que devuelven los placeholders de PlaceholderAPI
+placeholders:
+  activo: "Activo"
+  inactivo: "Inactivo"
+  ninguno: "Ninguno"
+  nadie: "Nadie"
+  sin-horarios: "Sin horarios"
+
+# Aura de particulas alrededor de quien esta capturando
+aura:
+  activada: true
+  particula: FLAME      # FLAME, END_ROD, SOUL_FIRE_FLAME, etc.
+  radio: 0.9
+  altura: 2.0
+  resplandor: true      # efecto glow (visible a traves de paredes)
+
+# Los items de recompensa se editan en el juego: /koth recompensas editar
+# Se llena solo con /koth create
+koths: {}
